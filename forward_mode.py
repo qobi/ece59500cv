@@ -59,7 +59,6 @@ plus = lift_real_cross_real_to_real(lambda x1, x2: x1+x2,
                                     lambda x1, x2: 1,
                                     lambda x1, x2: 1)
 
-
 minus = lift_real_cross_real_to_real(lambda x1, x2: x1-x2,
                                      lambda x1, x2: 1,
                                      lambda x1, x2: -1)
