@@ -46,7 +46,7 @@ def initialize_cotg(tape):
         for tape in tape.tapes: initialize_cotg(tape)
 
 def reverse_sweep(cotg, tape):
-    tape.cotg = tape.cotg+cotg
+    tape.cotg += cotg
     tape.fanout -= 1
     if tape.fanout==0:
         cotg = tape.cotg
