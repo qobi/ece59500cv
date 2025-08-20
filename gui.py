@@ -61,7 +61,7 @@ class App(tk.Tk):
             if fixed_size:
                 axes.set_xlim(0, 1)
                 axes.set_ylim(0, 1)
-            canvas.show()
+            canvas.draw()
             if click_command:
                 canvas.mpl_connect('button_press_event',
                                    lambda event: click_command(event.xdata,
@@ -112,7 +112,7 @@ def redraw():
     if fixed_size:
         axes.set_xlim(0, 1)
         axes.set_ylim(0, 1)
-    canvas.show()
+    canvas.draw()
 
 def get_window(): return window
 

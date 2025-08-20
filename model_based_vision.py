@@ -25,10 +25,10 @@ def project_point(pose, f, p):
     R = torch.matmul(Rtheta, torch.matmul(Rphi, Rpsi))
     t = vec((x, y, t))
     [x, y, z] = torch.matmul(R, p-t)
-    print [x, y, z]
+    print([x, y, z])
     u = f*x/z
     v = f*y/z
-    print [u, v]
+    print([u, v])
     return vec((u, v))
 
 def project_line(pose, f, l):
@@ -141,73 +141,73 @@ def dummy_command():
 def decrement_theta():
     global pose
     pose[0][0] -= 10
-    print pose
+    print(pose)
     process()
 
 def increment_theta():
     global pose
     pose[0][0] += 10
-    print pose
+    print(pose)
     process()
 
 def decrement_phi():
     global pose
     pose[0][1] -= 10
-    print pose
+    print(pose)
     process()
 
 def increment_phi():
     global pose
     pose[0][1] += 10
-    print pose
+    print(pose)
     process()
 
 def decrement_psi():
     global pose
     pose[0][2] -= 10
-    print pose
+    print(pose)
     process()
 
 def increment_psi():
     global pose
     pose[0][2] += 10
-    print pose
+    print(pose)
     process()
 
 def decrement_x():
     global pose
     pose[1][0] -= 10
-    print pose
+    print(pose)
     process()
 
 def increment_x():
     global pose
     pose[1][0] += 10
-    print pose
+    print(pose)
     process()
 
 def decrement_y():
     global pose
     pose[1][1] -= 10
-    print pose
+    print(pose)
     process()
 
 def increment_y():
     global pose
     pose[1][1] += 10
-    print pose
+    print(pose)
     process()
 
 def decrement_z():
     global pose
     pose[1][2] -= 10
-    print pose
+    print(pose)
     process()
 
 def increment_z():
     global pose
     pose[1][2] += 10
-    print pose
+    print(pose)
     process()
 
 add_button(0, 4, "Dummy", dummy_command, nothing)

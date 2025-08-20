@@ -18,7 +18,7 @@ def process():
         edges, 5, 5*np.pi/180, threshold, min_line_length, max_line_gap)
     if result is not None:
         for l in result:
-            if len(l)!=1: print l
+            if len(l)!=1: print(l)
     if result is None: lines = []
     else: lines = [list(l[0]) for l in result]
     if show_edges():
@@ -43,37 +43,37 @@ def dummy_command():
 def decrement_threshold():
     global threshold
     threshold -= 10
-    print threshold
+    print(threshold)
     process()
 
 def increment_threshold():
     global threshold
     threshold += 10
-    print threshold
+    print(threshold)
     process()
 
 def decrement_min_line_length():
     global min_line_length
     min_line_length -= 10
-    print min_line_length
+    print(min_line_length)
     process()
 
 def increment_min_line_length():
     global min_line_length
     min_line_length += 10
-    print min_line_length
+    print(min_line_length)
     process()
 
 def decrement_max_line_gap():
     global max_line_gap
     max_line_gap -= 10
-    print max_line_gap
+    print(max_line_gap)
     process()
 
 def increment_max_line_gap():
     global max_line_gap
     max_line_gap += 10
-    print max_line_gap
+    print(max_line_gap)
     process()
 
 add_button(0, 0, "Capture", capture_command, process)

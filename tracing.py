@@ -43,7 +43,7 @@ def times(x1, x2): return vertex("*", x1, x2)
 
 def print_code(v):
     var, code = v.trace()
-    for statement in code: print statement
-    print "return "+var
+    for statement in code: print(statement)
+    print("return "+var)
 
 def f(x, y): return leaf(6)*x*x+leaf(3)*y

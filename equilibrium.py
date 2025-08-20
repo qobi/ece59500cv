@@ -28,4 +28,4 @@ def equilibrium(A, B, a0, b0, n):
     bstar = argmax(h, b0, n)
     return astar, bstar
 
-print equilibrium(gameA, gameB, 0.0, 0.0, 10)
+print(equilibrium(gameA, gameB, 0.0, 0.0, 10))
