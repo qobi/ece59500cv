@@ -1,4 +1,4 @@
-# ece49595cv
+# ece59500cv
 Course material for Purdue ECE49595CV Undergraduate Introduction to Computer Vision and ECE59500CV Graduate Introduction to Computer Vision
 
 #### ACKNOWLEDGMENTS
