@@ -1,5 +1,0 @@
- 1. cite as published papers, not arXiv
- 2. no need to include my preample
- 3. resubmit as single file
- 4. resubmit as text
- 5. need URLs

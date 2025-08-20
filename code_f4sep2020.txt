@@ -1,4 +1,0 @@
-    sqrt r1, r2
-    add r1, r2, r3
-    mul r1, r2, r3
-    
