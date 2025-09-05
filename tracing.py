@@ -47,3 +47,7 @@ def print_code(v):
     print("return "+var)
 
 def f(x, y): return leaf(6)*x*x+leaf(3)*y
+
+# f(leaf(4), leaf(5))
+# f(leaf(4), leaf(5)).eval()
+# print_code(f(leaf(4), leaf(5)))
